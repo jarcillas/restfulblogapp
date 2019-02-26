@@ -32,6 +32,10 @@ const Blog = mongoose.model("Blog", blogSchema);
 //   body: "This is a cat."
 // });
 
+app.get("/", function(req, res) {
+  res.redirect("/blogs");
+});
+
 // RESTful Routes
 
 // INDEX - Lists all blogs
